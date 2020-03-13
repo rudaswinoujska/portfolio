@@ -1,0 +1,254 @@
+.line {
+  background: #d392a8;
+  width: 100%;
+  height: 3px;
+}
+.line2 {
+  background: #2d3561;
+  width: 50%;
+  height: 3px;
+}
+.zdj {
+  z-index: 9999999999;
+  margin-top: 20px;
+  margin: auto;
+  display: block;
+}
+.navbar {
+  margin-top: -30px;
+}
+
+@media all and (max-width: 767px) {
+  .navbar {
+    margin-top: -130px;
+    z-index: 999999;
+    position: fixed;
+  }
+  .line {
+    margin-top: 25px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .zdj {
+    height: 100px;
+  }
+  .navbar {
+    margin-top: -100px;
+    z-index: 999999;
+    position: fixed;
+  }
+
+  .line {
+    margin-top: 15px;
+  }
+}
+
+#me {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  background-image: url(img/linedpaper.png);
+  align-items: center;
+}
+#me article {
+  width: 500px;
+  justify-content: center;
+  background: #d392a8;
+  padding: 15px;
+  text-align: justify;
+  margin: 60px;
+}
+#me figure {
+  margin: 50px;
+  width: 300px;
+  justify-content: center;
+}
+#me img {
+  width: 100%;
+  border: solid #92d3c5 7px;
+  border-right-width: 10px;
+  border-bottom-width: 9px;
+  border-radius: 1000px;
+
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@media all and (max-width: 899px) {
+  #me figure {
+    width: 180px;
+    margin-bottom: 0;
+  }
+  #contact .catbox {
+    display: none;
+  }
+}
+@media all and (max-width: 1100px) {
+  #me figure {
+    width: 180px;
+  }
+}
+@keyframes example {
+  0% {
+    background-color: #d18599;
+    border-color: #d18599;
+  }
+  20% {
+    background-color: #fdc66d;
+    border-color: #fdc66d;
+  }
+  40% {
+    background-color: #9dcb7c;
+    border-color: #9dcb7c;
+  }
+  60% {
+    background-color: #81caba;
+    border-color: #81caba;
+  }
+  80% {
+    background-color: #bd89d1;
+    border-color: #bd89d1;
+  }
+  100% {
+    background-color: #d18599;
+    border-color: #d18599;
+  }
+}
+#ink {
+  background: hsl(231, 27%, 27%);
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+#ink figure {
+  padding: 20px;
+
+  margin: 0;
+}
+
+#ink article {
+  width: 600px;
+  padding: 20px;
+  text-align: justify;
+}
+.slider_e {
+  background: hsl(231, 27%, 27%);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.slider_e .item {
+  width: 120px;
+  margin: 0;
+}
+.slider_e .item img {
+  width: 120px;
+  margin: auto;
+}
+#skills {
+  padding: 50px 20px;
+  background-image: url("img/blue-sky.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#skills article {
+  max-width: 24%;
+
+  padding: 15px;
+  margin: 30px;
+  background: #ffffffab;
+  border: solid 5px #d392a8;
+}
+@media all and (max-width: 800px) {
+  #skills {
+    flex-direction: column;
+    padding: auto;
+  }
+  #skills article {
+    max-width: 80%;
+    margin: 30px auto;
+  }
+  #projects iframe {
+    width: 100vw;
+  }
+  #contact figure img {
+    width: 100%;
+  }
+  #contact div {
+    font-size: 65px !important;
+  }
+}
+#contact {
+  background-image: url(img/linedpaper.png);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+#contact figure {
+  margin: 10px auto;
+}
+#contact a {
+  color: #333;
+}
+#contact a:hover {
+  color: #222;
+  font-size: 100px;
+  line-height: 90px;
+  margin: -7px;
+}
+#contact a:active {
+  color: #fccd83;
+}
+
+#contact div {
+  margin: -40px auto 15px auto;
+  font-size: 90px;
+}
+#contact .catbox {
+  right: 0;
+
+  margin: 0;
+  height: 184px;
+  width: 324px;
+  position: absolute;
+}
+#contact > div > img {
+  opacity: 90%;
+  height: 80%;
+  width: 80%;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+#projects {
+  background: hsl(231, 27%, 27%);
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#projects iframe {
+  height: 100vh;
+  width: 80%;
+  margin: 40px 0;
+}
+#scroll-top img {
+  width: 35px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}

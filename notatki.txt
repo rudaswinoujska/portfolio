@@ -1,0 +1,6 @@
+html
+css
+x js
+c++, matematica
+bootstrap + kafelki
+flexbox media 
